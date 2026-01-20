@@ -97,30 +97,6 @@ async def broadcast(message: types.Message):
 # Log qiladi
 def log_user(message: types.Message):
     user = message.from_user
-
-    # 🇺🇿 O‘zbekiston vaqti (UTC+5)
-    uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
-
-    username = f"@{user.username}" if user.username else "@yoq"
-    line = f"Ism: {user.first_name} | Username: {username} | ID: {user.id} | Sana: {uz_time}\n"
-
-    # Agar fayl yo‘q bo‘lsa — yaratadi
-    if not os.path.exists("users.txt"):
-        with open("users.txt", "a", encoding="utf-8") as f:
-            f.write(line)
-        return
-
-    # Agar foydalanuvchi oldin yozilgan bo‘lsa — qayta yozmaydi
-    with open("users.txt", "r", encoding="utf-8") as f:
-        if f"ID: {user.id}" in f.read():
-            return
-
-    # 1 marta yozadi
-    with open("users.txt", "a", encoding="utf-8") as f:
-        f.write(line)
-
-def log_user(message: types.Message):
-    user = message.from_user
     uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
     username = f"@{user.username}" if user.username else "@yoq"
     text = message.text if message.text else "[media]"
@@ -141,13 +117,20 @@ def log_user(message: types.Message):
 # START
 @dp.message(F.text == "/start")
 async def start_handler(message: types.Message):
+    log_user(message)  # 👈 shu qatorni qo‘sh
+
     user_id = message.from_user.id
     if not await check_subscriptions(user_id):
-        await message.answer("📢 Iltimos, kanalga obuna bo‘ling:", reply_markup=subscription_keyboard())
+        await message.answer(
+            "📢 Iltimos, kanalga obuna bo‘ling:",
+            reply_markup=subscription_keyboard()
+        )
         return
 
-    await message.answer("🇺🇿 Tilni tanla    ng / Выберите язык / Choose language", reply_markup=language_keyboard())
-
+    await message.answer(
+        "🇺🇿 Tilni tanlang / Выберите язык / Choose language",
+        reply_markup=language_keyboard()
+    )
 
 
 # TIL TANLASH
