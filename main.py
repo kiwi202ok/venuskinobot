@@ -106,7 +106,7 @@ def log_user(message: types.Message):
 
     # Agar fayl yo‘q bo‘lsa — yaratadi
     if not os.path.exists("users.txt"):
-        with open("users.txt", "w", encoding="utf-8") as f:
+        with open("users.txt", "a", encoding="utf-8") as f:
             f.write(line)
         return
 
