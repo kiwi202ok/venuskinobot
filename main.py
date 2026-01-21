@@ -103,9 +103,13 @@ def log_user(message: types.Message):
 
     line = (
         f"Sana: {uz_time} | "
+
         f"ID: {user.id} | "
+
         f"Ism: {user.first_name} | "
+
         f"Username: {username} | "
+        
         f"Xabar: {text}\n"
     )
 
