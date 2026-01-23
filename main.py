@@ -105,13 +105,9 @@ def log_user(message: types.Message):
 
     line = (
         f"Sana: {uz_time} | "
-
         f"ID: {user.id} | "
-
         f"Ism: {user.first_name} | "
-
         f"Username: {username} | "
-
         f"Xabar: {text}\n"
     )
 
@@ -169,17 +165,26 @@ async def show_users(message: types.Message):
 
     try:
         with open("users.txt", "r", encoding="utf-8") as f:
-            data = f.read()
+            data = f.read().strip()
 
         if not data:
-            await message.answer("📂 Hozircha ma’lumot yo‘q.")
-        else:
-            await message.answer(
-                "📋 <b>Foydalanuvchilar va xabarlar:</b>\n\n"
-                f"{data[-3800:]}"
-            )
+            return await message.answer("📂 Hozircha ma’lumot yo‘q.")
+
+        # Har bir foydalanuvchini bo‘sh qator bilan ajratamiz
+        users = data.split("\n\n")
+
+        text = "📋 <b>Foydalanuvchilar va xabarlar:</b>\n\n"
+
+        for i, user_block in enumerate(users, 1):
+            text += f"👤 <b>{i}-foydalanuvchi</b>\n{user_block}\n\n"
+
+        # Telegram limitidan oshmasligi uchun
+        for chunk in [text[i:i+3800] for i in range(0, len(text), 3800)]:
+            await message.answer(chunk, parse_mode="HTML")
+
     except FileNotFoundError:
         await message.answer("❌ users.txt topilmadi.")
+
 
 
 
