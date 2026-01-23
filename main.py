@@ -98,7 +98,9 @@ async def broadcast(message: types.Message):
 def log_user(message: types.Message):
     user = message.from_user
     uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
+
     username = f"@{user.username}" if user.username else "@yoq"
+    
     text = message.text if message.text else "[media]"
 
     line = (
@@ -109,7 +111,7 @@ def log_user(message: types.Message):
         f"Ism: {user.first_name} | "
 
         f"Username: {username} | "
-        
+
         f"Xabar: {text}\n"
     )
 
