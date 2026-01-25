@@ -1,6 +1,5 @@
 import asyncio
 import os
-import sqlite3
 from datetime import datetime, timedelta, timezone
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.enums import ParseMode
@@ -96,33 +95,14 @@ async def broadcast(message: types.Message):
 
 
 # Log qiladi
-def init_users_db():
-    conn = sqlite3.connect("users.db")
-    cur = conn.cursor()
-
-    cur.execute("""
-    CREATE TABLE IF NOT EXISTS users (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        user_id INTEGER,
-        first_name TEXT,
-        username TEXT,
-        message TEXT,
-        date TEXT
-    )
-    """)
-
-    conn.commit()
-    conn.close()
-
-
 def log_user(message: types.Message):
     user = message.from_user
     uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
 
     username = f"@{user.username}" if user.username else "@yoq"
+    
     text = message.text if message.text else "[media]"
 
-    # TXT uchun
     line = (
         f"Sana: {uz_time} | "
         f"ID: {user.id} | "
@@ -133,46 +113,6 @@ def log_user(message: types.Message):
 
     with open("users.txt", "a", encoding="utf-8") as f:
         f.write(line)
-
-    # DB uchun
-    conn = sqlite3.connect("users.db")
-    cur = conn.cursor()
-
-    cur.execute(
-        """
-        INSERT INTO users (user_id, first_name, username, message, date)
-        VALUES (?, ?, ?, ?, ?)
-        """,
-        (user.id, user.first_name, username, text, uz_time)
-    )
-
-    conn.commit()
-    conn.close()
-
-def log_user_db(message: types.Message):
-    import sqlite3
-    from datetime import datetime, timedelta, timezone
-
-    user = message.from_user
-    uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
-
-    username = f"@{user.username}" if user.username else "@yoq"
-    text = message.text if message.text else "[media]"
-
-    conn = sqlite3.connect("users.db")
-    cur = conn.cursor()
-
-    cur.execute(
-        """
-        INSERT INTO users (user_id, first_name, username, message, date)
-        VALUES (?, ?, ?, ?, ?)
-        """,
-        (user.id, user.first_name, username, text, uz_time)
-    )
-
-    conn.commit()
-    conn.close()
-
 
 
 
@@ -222,7 +162,7 @@ async def get_file_id(message: types.Message):
 async def show_users(message: types.Message):
     if message.from_user.id not in ADMIN_IDS:
         return await message.answer("⛔ Bu buyruq faqat adminlar uchun!")
-    users = data.split("\n\n")
+
     try:
         with open("users.txt", "r", encoding="utf-8") as f:
             data = f.read()

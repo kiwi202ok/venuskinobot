@@ -1412,10 +1412,7 @@ Sana: 2026-01-25 14:34:41 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: 
 Sana: 2026-01-25 14:34:44 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: @yoq | Xabar: 204
 Sana: 2026-01-25 14:34:47 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: @yoq | Xabar: 205
 Sana: 2026-01-25 14:34:50 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: @yoq | Xabar: 206
-Sana: 2026-01-25 14:34:
-
-Venus Kino bot, [1/25/2026 11:14 PM]
-55 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: @yoq | Xabar: 207
+Sana: 2026-01-25 14:34:55 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: @yoq | Xabar: 207
 Sana: 2026-01-25 14:34:58 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: @yoq | Xabar: 208
 Sana: 2026-01-25 14:35:01 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: @yoq | Xabar: 209
 Sana: 2026-01-25 14:35:07 | ID: 7961563495 | Ism: Xalilova Farangiz | Username: @yoq | Xabar: 210
@@ -1457,10 +1454,7 @@ Sana: 2026-01-25 15:44:26 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | 
 Sana: 2026-01-25 15:44:30 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | Xabar: 202
 Sana: 2026-01-25 15:44:34 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | Xabar: 203
 Sana: 2026-01-25 15:44:37 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | Xabar: 204
-Sana: 20
-
-Venus Kino bot, [1/25/2026 11:14 PM]
-26-01-25 15:44:41 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | Xabar: 205
+Sana: 2026-01-25 15:44:41 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | Xabar: 205
 Sana: 2026-01-25 15:44:44 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | Xabar: 206
 Sana: 2026-01-25 15:44:50 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | Xabar: 207
 Sana: 2026-01-25 15:44:53 | ID: 6580135938 | Ism: Sadullayev | Username: @yoq | Xabar: 208
@@ -1478,7 +1472,7 @@ Sana: 2026-01-25 16:13:39 | ID: 5727478095 | Ism: Dili | Username: @Dili_noz22 |
 Sana: 2026-01-25 16:13:44 | ID: 5727478095 | Ism: Dili | Username: @Dili_noz22 | Xabar: 209
 Sana: 2026-01-25 16:16:15 | ID: 1425653805 | Ism: 400 | Username: @yoq | Xabar: 206
 Sana: 2026-01-25 16:22:19 | ID: 6095246414 | Ism: 🌘 | Username: @Tjk_022 | Xabar: 204
-Sana: 2026-01-25 16:29:17 | ID: 650337213 | Ism: 🤩🤩🤩Mohigul 🥰🥰🥰 | Username: @yoq | Xabar: 202
+Sana: 2026-01-25 16:29:17 | ID: 650337213  | Ism: 🤩🤩🤩Mohigul 🥰🥰🥰 | Username: @yoq | Xabar: 202
 Sana: 2026-01-25 16:40:05 | ID: 6677623644 | Ism: Нурсултан | Username: @mlskn5 | Xabar: /start
 Sana: 2026-01-25 16:43:09 | ID: 5637179581 | Ism: . | Username: @yoq | Xabar: 208
 Sana: 2026-01-25 16:48:16 | ID: 5875832444 | Ism: 🌸 | Username: @yoq | Xabar: 204
@@ -1491,7 +1485,7 @@ Sana: 2026-01-25 16:48:43 | ID: 5875832444 | Ism: 🌸 | Username: @yoq | Xabar:
 Sana: 2026-01-25 16:48:54 | ID: 5875832444 | Ism: 🌸 | Username: @yoq | Xabar: 210
 Sana: 2026-01-25 16:53:05 | ID: 6095246414 | Ism: 🌘 | Username: @Tjk_022 | Xabar: 205
 Sana: 2026-01-25 16:59:56 | ID: 5637179581 | Ism: . | Username: @yoq | Xabar: 209
-Sana: 2026-01-25 17:07:28 | ID: 109742623 | Ism: Манзура | Username: @Manzura1008 | Xabar: 206
+Sana: 2026-01-25 17:07:28 | ID: 109742623  | Ism: Манзура | Username: @Manzura1008 | Xabar: 206
 Sana: 2026-01-25 17:15:38 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: /start
 Sana: 2026-01-25 17:15:53 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: 209
 Sana: 2026-01-25 17:17:02 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: 101
@@ -1503,10 +1497,7 @@ Sana: 2026-01-25 17:17:33 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 |
 Sana: 2026-01-25 17:17:35 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: 205
 Sana: 2026-01-25 17:17:38 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: 206
 Sana: 2026-01-25 17:17:39 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: 207
-Sana: 2026-01-25 17:17:42 | ID: 8471541205 |
-
-Venus Kino bot, [1/25/2026 11:14 PM]
-Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: 208
+Sana: 2026-01-25 17:17:42 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: 208
 Sana: 2026-01-25 17:17:45 | ID: 8471541205 | Ism: 𝓷𝓮𝓿𝓪𝓭𝓪🩷 | Username: @yoq | Xabar: 209
 Sana: 2026-01-25 17:19:50 | ID: 6095246414 | Ism: 🌘 | Username: @Tjk_022 | Xabar: 206
 Sana: 2026-01-25 17:21:08 | ID: 7874102744 | Ism: Гулнора | Username: @yoq | Xabar: 203
@@ -1545,10 +1536,7 @@ Sana: 2026-01-25 18:45:32 | ID: 8396585590 | Ism: Абубакр | Username: @yo
 Sana: 2026-01-25 18:46:59 | ID: 8396585590 | Ism: Абубакр | Username: @yoq | Xabar: /start
 Sana: 2026-01-25 18:47:06 | ID: 8396585590 | Ism: Абубакр | Username: @yoq | Xabar: 209
 Sana: 2026-01-25 18:48:01 | ID: 7874102744 | Ism: Гулнора | Username: @yoq | Xabar: 206
-Sana: 2026-01-25 18:48:17 | ID: 8198668717 | Ism: Om1w💙 | Usernam
-
-Venus Kino bot, [1/25/2026 11:14 PM]
-e: @yoq | Xabar: 15
+Sana: 2026-01-25 18:48:17 | ID: 8198668717 | Ism: Om1w💙 | Username: @yoq | Xabar: 15
 Sana: 2026-01-25 18:48:46 | ID: 8198668717 | Ism: Om1w💙 | Username: @yoq | Xabar: 201
 Sana: 2026-01-25 18:48:51 | ID: 8198668717 | Ism: Om1w💙 | Username: @yoq | Xabar: 202
 Sana: 2026-01-25 18:48:56 | ID: 8198668717 | Ism: Om1w💙 | Username: @yoq | Xabar: 203
@@ -1589,10 +1577,7 @@ Sana: 2026-01-25 19:26:56 | ID: 6025741145 | Ism: Диля | Username: @amanda_l
 Sana: 2026-01-25 19:34:20 | ID: 109742623 | Ism: Манзура | Username: @Manzura1008 | Xabar: 210
 Sana: 2026-01-25 19:37:52 | ID: 109742623 | Ism: Манзура | Username: @Manzura1008 | Xabar: 100
 Sana: 2026-01-25 19:43:55 | ID: 6058727039 | Ism: S.I | Username: @Develop_11232807070707 | Xabar: 205
-Sana: 2026-01-25 1
-
-
-9:44:05 | ID: 6058727039 | Ism: S.I | Username: @Develop_11232807070707 | Xabar: 206
+Sana: 2026-01-25 19:44:05 | ID: 6058727039 | Ism: S.I | Username: @Develop_11232807070707 | Xabar: 206
 Sana: 2026-01-25 19:44:17 | ID: 6058727039 | Ism: S.I | Username: @Develop_11232807070707 | Xabar: 207
 Sana: 2026-01-25 19:44:21 | ID: 6058727039 | Ism: S.I | Username: @Develop_11232807070707 | Xabar: 208
 Sana: 2026-01-25 19:44:33 | ID: 6058727039 | Ism: S.I | Username: @Develop_11232807070707 | Xabar: 209
@@ -1672,10 +1657,7 @@ Sana: 2026-01-25 22:30:13 | ID: 5865863334 | Ism: Oka | Username: @yoq | Xabar: 
 Sana: 2026-01-25 22:30:50 | ID: 1567213511 | Ism: М | Username: @yoq | Xabar: 205
 Sana: 2026-01-25 22:30:56 | ID: 1567213511 | Ism: М | Username: @yoq | Xabar: 206
 Sana: 2026-01-25 22:31:01 | ID: 1567213511 | Ism: М | Username: @yoq | Xabar: 207
-Sana: 2026-
-
-Venus Kino bot, [1/25/2026 11:14 PM]
-01-25 22:31:05 | ID: 1567213511 | Ism: М | Username: @yoq | Xabar: 208
+Sana: 2026-01-25 22:31:05 | ID: 1567213511 | Ism: М | Username: @yoq | Xabar: 208
 Sana: 2026-01-25 22:31:07 | ID: 7882961149 | Ism: 👑Maftuna | Username: @yoq | Xabar: 209
 Sana: 2026-01-25 22:31:09 | ID: 1567213511 | Ism: М | Username: @yoq | Xabar: 209
 Sana: 2026-01-25 22:31:19 | ID: 5865863334 | Ism: Oka | Username: @yoq | Xabar: 202
