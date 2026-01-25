@@ -110,12 +110,15 @@ def log_user(message: types.Message):
         f"Xabar: {text}\n"
     )
 
-    # Faylni bot fayli bilan bir joyda yaratish/ochish
-    file_path = os.path.join(os.path.dirname(__file__), "users.txt")
-
+    # ✅ Faylni bot fayli bilan bir joyda yaratish va yozish
     try:
+        # __file__ bot skripti joylashgan fayl
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        file_path = os.path.join(base_dir, "users.txt")
+
         with open(file_path, "a", encoding="utf-8") as f:
             f.write(line)
+
     except Exception as e:
         print("❌ users.txt ga yozishda xato:", e)
 
