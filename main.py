@@ -100,7 +100,6 @@ def log_user(message: types.Message):
     uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
 
     username = f"@{user.username}" if user.username else "@yoq"
-    
     text = message.text if message.text else "[media]"
 
     line = (
@@ -111,8 +110,14 @@ def log_user(message: types.Message):
         f"Xabar: {text}\n"
     )
 
-    with open("users.txt", "a", encoding="utf-8") as f:
-        f.write(line)
+    # Faylni bot fayli bilan bir joyda yaratish/ochish
+    file_path = os.path.join(os.path.dirname(__file__), "users.txt")
+
+    try:
+        with open(file_path, "a", encoding="utf-8") as f:
+            f.write(line)
+    except Exception as e:
+        print("❌ users.txt ga yozishda xato:", e)
 
 
 
