@@ -95,6 +95,9 @@ async def broadcast(message: types.Message):
 
 
 # Log qiladi
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+USERS_FILE = os.path.join(BASE_DIR, "users.txt")
+
 def log_user(message: types.Message):
     user = message.from_user
     uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
