@@ -99,9 +99,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 USERS_FILE = os.path.join(BASE_DIR, "users.txt")
 
 def log_user(message: types.Message):
+    print("ishladi")
     user = message.from_user
     uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
-
     username = f"@{user.username}" if user.username else "@yoq"
     text = message.text if message.text else "[media]"
 
@@ -111,6 +111,7 @@ def log_user(message: types.Message):
         f"Ism: {user.first_name} | "
         f"Username: {username} | "
         f"Xabar: {text}\n"
+
     )
 
     # ✅ Faylni bot fayli bilan bir joyda yaratish va yozish
