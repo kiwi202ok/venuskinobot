@@ -100,6 +100,7 @@ USERS_FILE = os.path.join(BASE_DIR, "users.txt")
 
 def log_user(message: types.Message):
     print("ishladi")
+
     user = message.from_user
     uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
     username = f"@{user.username}" if user.username else "@yoq"
@@ -111,20 +112,23 @@ def log_user(message: types.Message):
         f"Ism: {user.first_name} | "
         f"Username: {username} | "
         f"Xabar: {text}\n"
-
     )
 
-    # ✅ Faylni bot fayli bilan bir joyda yaratish va yozish
-    try:
-        # __file__ bot skripti joylashgan fayl
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        file_path = os.path.join(base_dir, "users.txt")
+    with open(USERS_FILE, "a", encoding="utf-8") as f:
+        f.write(line)
 
-        with open(file_path, "a", encoding="utf-8") as f:
-            f.write(line)
 
-    except Exception as e:
-        print("❌ users.txt ga yozishda xato:", e)
+    # # ✅ Faylni bot fayli bilan bir joyda yaratish va yozish
+    # try:
+    #     # __file__ bot skripti joylashgan fayl
+    #     base_dir = os.path.dirname(os.path.abspath(__file__))
+    #     file_path = os.path.join(base_dir, "users.txt")
+
+    #     with open(file_path, "a", encoding="utf-8") as f:
+    #         f.write(line)
+
+    # except Exception as e:
+    #     print("❌ users.txt ga yozishda xato:", e)
 
 
 
