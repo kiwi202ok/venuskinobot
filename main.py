@@ -97,7 +97,9 @@ async def broadcast(message: types.Message):
 # Log qiladi
 def log_user(message: types.Message):
     user = message.from_user
-    uz_time = datetime.now(timezone(timedelta(hours=5))).strftime("%Y-%m-%d %H:%M:%S")
+    uz_time = datetime.now(
+        timezone(timedelta(hours=5))
+    ).strftime("%Y-%m-%d %H:%M:%S")
 
     username = f"@{user.username}" if user.username else "@yoq"
     text = message.text if message.text else "[media]"
@@ -109,6 +111,10 @@ def log_user(message: types.Message):
         f"Username: {username} | "
         f"Xabar: {text}\n"
     )
+
+    with open("users.txt", "a", encoding="utf-8") as f:
+        f.write(line)
+
 
 
 
