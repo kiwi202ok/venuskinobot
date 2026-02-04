@@ -111,7 +111,6 @@ def log_user(message: types.Message):
         f"Username: {username} | "
         f"Xabar: {text}\n"
     )
-
     with open("users.txt", "a", encoding="utf-8") as f:
         f.write(line)
 
@@ -125,7 +124,7 @@ async def start_handler(message: types.Message):
     user_id = message.from_user.id
     if not await check_subscriptions(user_id):
         await message.answer(
-            "📢 Iltimos, kanalga obuna bo‘ling:",
+            "📢 Iltimos, kanalga obuna bo'ling:",
             reply_markup=subscription_keyboard()
         )
         return
@@ -141,9 +140,20 @@ async def start_handler(message: types.Message):
 async def handle_language(callback: types.CallbackQuery):
     lang = callback.data.split("_")[1]
     user_id = callback.from_user.id
+
     set_language(user_id, lang)
-    await callback.message.answer(texts["language_selected"][lang])
-    await callback.message.answer(texts["send_movie_code"][lang])
+
+    # 1️⃣ eski xabarni (tugmalar bilan) tahrirlab, tugmalarni olib tashlaymiz
+    await callback.message.edit_reply_markup(reply_markup=None)
+
+    # 2️⃣ bitta umumiy xabar yuboramiz
+    await callback.message.answer(
+        texts["language_selected"][lang] + "\n\n" +
+        texts["send_movie_code"][lang]
+    )
+
+    await callback.answer()
+
 
 
 
