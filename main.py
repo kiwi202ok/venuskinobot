@@ -202,8 +202,8 @@ async def handle_movie_code(message: types.Message):
             chat_id=message.chat.id,
             video=movies[code]['file_id'],
             protect_content=True
-            await message.answer(f"🎬 {movies[code]['title']}")
         )
+        await message.answer(f"🎬 {movies[code]['title']}")
     else:
         await message.answer("❌ Bunday kino topilmadi.")
 
