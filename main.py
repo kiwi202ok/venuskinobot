@@ -199,11 +199,11 @@ async def handle_movie_code(message: types.Message):
 
     if code in movies:
         await bot.send_video(
-            chat_id=message.chat.id,
-            video=movies[code]['file_id'],
-            protect_content=True
-        )
-        await message.answer(f"🎬 {movies[code]['title']}")
+    chat_id=message.chat.id,
+    video=movies[code]['file_id'],
+    caption=f"🎬 {movies[code]['title']}",
+    protect_content=True
+)
     else:
         await message.answer("❌ Bunday kino topilmadi.")
 
