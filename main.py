@@ -143,16 +143,13 @@ async def handle_language(callback: types.CallbackQuery):
 
     set_language(user_id, lang)
 
-    # 1️⃣ eski xabarni (tugmalar bilan) tahrirlab, tugmalarni olib tashlaymiz
-    await callback.message.edit_reply_markup(reply_markup=None)
-
-    # 2️⃣ bitta umumiy xabar yuboramiz
-    await callback.message.answer(
+    await callback.message.edit_text(
         texts["language_selected"][lang] + "\n\n" +
         texts["send_movie_code"][lang]
     )
 
     await callback.answer()
+
 
 
 
