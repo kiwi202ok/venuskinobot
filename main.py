@@ -136,7 +136,7 @@ async def start_handler(message: types.Message):
 
 
 # TIL TANLASH
-@dp.callback_query(F.data.startswith("lang"))
+@dp.message(F.data.startswith("lang"))
 async def handle_language(callback: types.CallbackQuery):
     lang = callback.data.split("_")[1]
     user_id = callback.from_user.id
