@@ -135,8 +135,22 @@ async def start_handler(message: types.Message):
     )
 
 
+
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+@dp.message(F.text == "/lang")
+async def lang_command(message: types.Message):
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="🇺🇿 Uzbek", callback_data="lang_uz")],
+        [InlineKeyboardButton(text="🇷🇺 Russian", callback_data="lang_ru")],
+        [InlineKeyboardButton(text="🇬🇧 English", callback_data="lang_en")]
+    ])
+    await message.answer("Iltimos, tilni tanlang:", reply_markup=keyboard)
+
+
+
 # TIL TANLASH
-@dp.message(F.data.startswith("lang"))
+@dp.callback_query(F.data.startswith("lang"))
 async def handle_language(callback: types.CallbackQuery):
     lang = callback.data.split("_")[1]
     user_id = callback.from_user.id
