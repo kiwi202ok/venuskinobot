@@ -136,16 +136,22 @@ async def start_handler(message: types.Message):
 
 
 
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 
 @dp.message(F.text == "/lang")
 async def lang_command(message: types.Message):
-    keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="🇺🇿 Uzbek", callback_data="lang_uz")],
-        [InlineKeyboardButton(text="🇷🇺 Russian", callback_data="lang_ru")],
-        [InlineKeyboardButton(text="🇬🇧 English", callback_data="lang_en")]
-    ])
-    await message.answer("Iltimos, tilni tanlang:", reply_markup=keyboard)
+    user_id = message.from_user.id
+    if not await check_subscriptions(user_id):
+        await message.answer(
+            "📢 Iltimos, kanalga obuna bo'ling:",
+            reply_markup=subscription_keyboard()
+        )
+        return
+
+    await message.answer(
+        "🇺🇿 Tilni tanlang / Выберите язык / Choose language",
+        reply_markup=language_keyboard()
+    )
 
 
 
