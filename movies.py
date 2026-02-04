@@ -64,4 +64,8 @@ movies = {
         "title": "97-modda 9-qism(final)",
         "file_id": "BAACAgIAAxkBAAIXU2lzVUS1_4Q4CptbSw_BfSUDh7kwAAJmjQACynmYSxum_JJHrqVyOAQ"
     },
+    "210": {
+        "title": "Sotqin",
+        "file_id": "BAACAgIAAxkBAAJRF2mDPyGfQ7am3Lnfv7eWE2MY9REbAAKNZQACUORgSMGTf63yy8qbOAQ"
+    },
 }

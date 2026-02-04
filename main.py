@@ -117,8 +117,6 @@ def log_user(message: types.Message):
 
 
 
-
-
 # START
 @dp.message(F.text == "/start")
 async def start_handler(message: types.Message):
