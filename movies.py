@@ -69,8 +69,8 @@ movies = {
         "file_id": "BAACAgIAAxkBAAJRF2mDPyGfQ7am3Lnfv7eWE2MY9REbAAKNZQACUORgSMGTf63yy8qbOAQ"
     },
     "211": {
-        "title": "Sotqin", 
-        "file_id": "BAACAgIAAxkBAAJbV2oUiOEdmYCubfpXv36l3_W3fDhrAALypQACqk2gSPdSZGhYyyACOwQ"
+        "title": "", 
+        "file_id": ""
     },
     
 }
