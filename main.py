@@ -137,7 +137,6 @@ async def start_handler(message: types.Message):
 
 
 
-
 @dp.message(F.text == "/lang")
 async def lang_command(message: types.Message):
     user_id = message.from_user.id
@@ -196,7 +195,7 @@ async def show_users(message: types.Message):
             data = f.read()
     
         if not data:
-            await message.answer("📂 Hozircha ma’lumot yo‘q.")
+            await message.answer("📂 Hozircha ma'lumot yo'q.")
         else:
             await message.answer(
                 
@@ -207,7 +206,6 @@ async def show_users(message: types.Message):
         await message.answer("❌ users.txt topilmadi.")
 
 
-
 # KINO KODI
 @dp.message(F.text)
 async def handle_movie_code(message: types.Message):
@@ -216,7 +214,7 @@ async def handle_movie_code(message: types.Message):
 
     user_id = message.from_user.id
     if not await check_subscriptions(user_id):
-        await message.answer("📢 Iltimos, kanalga obuna bo‘ling:", reply_markup=subscription_keyboard())
+        await message.answer("📢 Iltimos, kanalga obuna bo'ling:", reply_markup=subscription_keyboard())
         return
 
     log_user(message)
