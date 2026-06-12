@@ -192,16 +192,17 @@ async def show_users(message: types.Message):
 
     try:
         with open("users.txt", "r", encoding="utf-8") as f:
-            data = f.read()
-    
-        if not data:
+            lines = f.readlines()
+
+        if not lines:
             await message.answer("📂 Hozircha ma'lumot yo'q.")
         else:
+            formatted = "\n\n".join(line.strip() for line in lines if line.strip())
+
             await message.answer(
-                
-                "📋 <b>Foydalanuvchilar va xabarlar:</b>\n\n"
-                f"{data[-3800:]}"
+                f"📋 <b>Foydalanuvchilar va xabarlar:</b>\n\n{formatted[-3800:]}"
             )
+
     except FileNotFoundError:
         await message.answer("❌ users.txt topilmadi.")
 
